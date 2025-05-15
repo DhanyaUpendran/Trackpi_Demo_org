@@ -1,0 +1,74 @@
+/* Ecllipse.css */
+
+.ellipse-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #0A0A0A;
+  overflow: hidden;
+ 
+}
+
+.ellipse-shape {
+  position: absolute;
+  top: -10vh;
+  left: -10vw;
+  width: 134vw;
+  height: 120vh;
+  border-radius: 50% / 40%;
+  backdrop-filter: blur(80px);
+  background: linear-gradient(0deg, #FF9D0066 0%, #000E4D4D 55%, #000E4DFF 100%);
+  background-size: 200% 200%;
+  max-width: 1500px;
+  max-height: 1300px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .ellipse-shape {
+    width: 120vw;
+    height: 140vh;
+    top: -15vh;
+    left: -15vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .ellipse-shape {
+    width: 140vw;
+    height: 150vh;
+    top: -20vh;
+    left: -20vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .ellipse-shape {
+    width: 180vw;
+    height: 160vh;
+    top: -25vh;
+    left: -25vw;
+  }
+}
+/* Tablet Screens */
+@media (max-width: 1024px) {
+  .ellipse-container {
+    height: 140vh; /* Extra height for scroll-heavy views */
+    
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .ellipse-container {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .ellipse-container {
+    height: 160vh;
+  }
+}
