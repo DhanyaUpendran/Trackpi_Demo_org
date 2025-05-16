@@ -15,7 +15,7 @@ const courseSchema = new mongoose.Schema({
     type: String, // Cloudinary URL
     required: true,
   },
-  videos: [videoSchema],
+  videoDetails:[videoSchema],
 });
 
 const Course = mongoose.model('Course', courseSchema);
