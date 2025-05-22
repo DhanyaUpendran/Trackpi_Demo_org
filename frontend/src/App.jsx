@@ -5,7 +5,10 @@ import Ecllipse from './components/Ecllipse';
 import WatchvideoSection from './Pages/Watchvideo';
 import AddCourseForm from './Pages/AddCourseForm';
 import CourseList from './Pages/CourseList';
-import USerMainCourse from './Pages/CourseSection';
+import CourseDetailsPopUp from './Pages/CourseDetailsPopUp';
+import StartAssessmentPopUp from './Pages/StartAssessmentPopUp';
+
+
 function App() {
   return (
     <Router>
@@ -14,10 +17,11 @@ function App() {
         <Header />
       </div>
       <Routes>
-         <Route path="/Watchvideo" element={<WatchvideoSection />} />
+        <Route path="/Watchvideo/:id" element={<WatchvideoSection />} />
         <Route path="/addCourse" element={<AddCourseForm />} /> 
         <Route path="/viewCourse" element={<CourseList />} />
-        <Route path="/mainCourse" element={<USerMainCourse />} />
+        <Route path="/courseDetailsPopUp" element={<CourseDetailsPopUp />} />
+        
         {/* Add more routes as needed */}
       </Routes>
     </Router>

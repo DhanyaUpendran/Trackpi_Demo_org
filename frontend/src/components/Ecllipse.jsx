@@ -90,7 +90,7 @@ const Ecllipse = () => {
     height: "100vh",
     // top: '-104px',
     // left: '-178px',
-    backgroundColor: "#0A0A0A",
+     backgroundColor: "#0A0A0A",
     overflow: 'hidden',
      zIndex: -1
   };
