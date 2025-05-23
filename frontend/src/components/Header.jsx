@@ -1,10 +1,13 @@
 
 import React from 'react';
 import logo from "../assets/trackpiLogo.png";
+import Background from './Background';
 
 const Header = () => {
   return (
+    
     <header
+    
       className="w-full h-10 flex items-center justify-between  border-b border-[#5C5C5C] py-2 px-12 relative overflow-hidden"
       style={{
         bottom:"1px"
